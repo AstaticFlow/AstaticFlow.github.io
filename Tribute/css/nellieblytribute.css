@@ -1,11 +1,37 @@
+.color-primary-0 { color: #205F8F }	/* Main Primary color */
+.color-primary-1 { color: #598AB0 }
+.color-primary-2 { color: #386F99 }
+.color-primary-3 { color: #124973 }
+.color-primary-4 { color: #06365B }
+
+.color-secondary-1-0 { color: #DFB025 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FFDD77 }
+.color-secondary-1-2 { color: #EEC64D }
+.color-secondary-1-3 { color: #B38B11 }
+.color-secondary-1-4 { color: #8D6A00 }
+
+.color-secondary-2-0 { color: #DF5A25 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FF9E77 }
+.color-secondary-2-2 { color: #EE7B4D }
+.color-secondary-2-3 { color: #B33F11 }
+.color-secondary-2-4 { color: #8D2800 }
+
+.color-complement-0 { color: #DF8F25 }	/* Main Complement color */
+.color-complement-1 { color: #FFC577 }
+.color-complement-2 { color: #EEA94D }
+.color-complement-3 { color: #B36E11 }
+.color-complement-4 { color: #8D5100 }
+
 main {
-    background-color: grey;
-    font-family: serif;
+    background-color: #205F8F;
+    font-family: sans-serif;
+    color: ;
+    margin: auto;
 }
 
 h1, h2, h3 {
     text-align: center;
-    color: "";
+    color: ;
     margin: auto;
 }
 
@@ -15,11 +41,28 @@ h1, h2, h3 {
     text-align: center;
 }
 
-p.name {
-    font-style: italic;
+#timeline {
+    margin: auto;
+    background-color: white;
+    border-color: #EE7B4D;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    max-width: 850px;
+    max-height: auto;
+    line-height: 25px;
 }
 
-#timeline {
+li {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
     
-    margin: auto;
+}
+
+figcaption {
+    
 }
