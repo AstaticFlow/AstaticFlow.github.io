@@ -4,18 +4,30 @@ html {
 
 main {
     background-color: grey;
+    font-family: serif;
 }
 
-body {
+header {
 
 }
 
-h1 {
-
+h1, h2, h3 {
+    text-align: center;
+    color: "";
+    margin: auto;
 }
 
 .center {
     display: block;
     margin: auto;
     text-align: center;
+}
+
+p.name {
+    font-style: italic;
+}
+
+#timeline {
+    
+    margin: auto;
 }
