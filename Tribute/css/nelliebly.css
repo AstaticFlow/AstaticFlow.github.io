@@ -22,17 +22,30 @@
 .color-complement-3 { color: #B36E11 }
 .color-complement-4 { color: #8D5100 }
 
+body {
+    background-color: #EE7B4D;
+}
+
 main {
-    background-color: #205F8F;
+    background-color: #386F99;
     font-family: sans-serif;
     color: ;
     margin: auto;
+    border-radius: 20px;
+}
+
+#title {
+    padding-top: 20px;
 }
 
 h1, h2, h3 {
     text-align: center;
-    color: ;
+    color: white;
     margin: auto;
+}
+
+figcaption {
+    color: white;
 }
 
 .center {
@@ -63,6 +76,19 @@ img {
     
 }
 
-figcaption {
-    
+#timeline-title {
+    padding: 20px;
+}
+
+#wiki-link{ 
+    color: white;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 5px;
+    margin: auto;
+    max-width: 850 px;
+    max-height: auto;
+
+
 }
