@@ -23,14 +23,13 @@
 .color-complement-4 { color: #8D5100 }
 
 body {
-    background-color: #EE7B4D;
+    background-color: #386F99;
 }
 
 main {
-    background-color: #386F99;
+    background-color: #598AB0;
     font-family: sans-serif;
-    color: ;
-    margin: auto;
+    margin: 10px 10px 10px 10px;
     border-radius: 20px;
 }
 
@@ -81,12 +80,12 @@ img {
 }
 
 #wiki-link{ 
-    color: white;
     padding: 20px;
     border-style: solid;
     border-radius: 20px;
     border-width: 5px;
-    margin: auto;
+    border-color: #EE7B4D;
+    margin: 20px 25% auto 25%;
     max-width: 850 px;
     max-height: auto;
 
