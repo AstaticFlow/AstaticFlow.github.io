@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Concert Survey Form</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/survey-form.css">
-</head>
-<body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <header>
-    <h1 id="title" class="text-shadow">
-      Welcome to the Post-Concert Survey
-    </h1>
-    <p id="description" class="text-shadow">Your input is highly valued and will be used to plan future performances</p>
-  </header>
-  <main>
-    <form id="survey-form">
-      <div>
-          
-      </div>
-    </form>
-  </main>
-  <footer>
-    <p class="footer-text">
-      Designed and Coded by AstaticFlow
-    </p>
-    <p class="footer-text">
-      2022
-    </p>
-  </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Concert Survey Form</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/survey-form.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+      <h1 id="title" class="text-shadow">Welcome to the Post-Concert Survey</h1>
+      <p id="description" class="text-shadow">
+        Your input is highly valued and will be used to plan future performances
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="fname" class="required">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name here" required><br>
+        <label for="lname" class="required">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name here" required><br>
+        <label for="email" class="required">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Enter your email address here:"><br>
+        <input type="submit" name="submit" id="submit" value="Submit">
+        <label for="age">Age</label>
+      </form>
+    </main>
+    <footer>
+      <p class="footer-text">Updated <time datetime="2022-01-18">1-18-2022</p>
+      <p class="footer-text">Designed and Coded by AstaticFlow</p>
+    </footer>
+  </body>
+</html>
