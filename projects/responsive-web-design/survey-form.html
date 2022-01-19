@@ -30,6 +30,9 @@
     <main>
       <form id="survey-form">
         <p>Fields marked with an "<span class="required"></span>" are required</p>
+          
+          <!---NAME INPUT------------------------------------------------->
+
         <div>
           <label id="name-label" for="name" class="required">Name:</label>
           <input 
@@ -39,6 +42,9 @@
             placeholder="enter your full name here" required
           />
         </div>
+
+          <!---EMAIL INPUT--------------------------------------------------->
+
         <div>
           <label id="email-label" for="email" class="required">Email:</label>
           <input
@@ -49,6 +55,9 @@
             required
           />
         </div>
+
+          <!---AGE INPUT----------------------------------------------------->
+
         <div>
           <label id="number-label" for="age" class="">Age (optional):</label>
           <input
@@ -56,16 +65,95 @@
             id="number"
             name="age"
             placeholder="age"
-            min="1"
+            min="10"
             max="120"
           />
         </div>
+
+          <!---DROPDOWN SELECTOR--------------------------------------->
+
+        <div>
+          <p>How satisfying was the performance?</p>
+          <select id="dropdown" name="satisfaction" required>
+            <option disabled selected value>Please choose one</option>
+            <option value="high-sat">5 - Highly Satisfying</option>
+            <option value="sat">4 - Satisfying</option>
+            <option value="neutral-sat">3 - Neutral</option>
+            <option value="unsat">2-Unsatisfying</option>
+            <option value="high-unsat">1 - Highly Unsatisfying</option>
+          </select>
+        </div>
+
+          <!---RADIO SELECTOR------------------------------------------>
+
+        <div>
+          <p>How likely are you to return for another performance?</p>
+          <label>
+            <input
+              name="user-return"
+              value="highly-likely-return"
+              type="radio"
+              class="input-radio"
+            />
+            5 - Highly Likely
+          </label>
+          <label>
+            <input
+              name="user-return"
+              value="likely-return"
+              type="radio"
+              class="input-radio"
+            />
+            4 - Likely
+          </label>
+          <label>
+            <input
+              name="user-return"
+              value="neutral-return"
+              type="radio"
+              class="input-radio"
+            />
+            3 - Neutral
+          </label>
+          <label>
+            <input
+              name="user-return"
+              value="unlikely-return"
+              type="radio"
+              class="input-radio"
+            />
+            2 - Unlikely
+          </label>
+          <label>
+            <input
+              name="user-return"
+              value="highly-unlikely-return"
+              type="radio"
+              class="input-radio"
+            />
+            1 - Highly Unlikely
+          </label>
+        </div>
+
+          <!---CHECKBOX SELECTOR--->
+
+        <div>
+
+        </div>
+
+          <!---TEXTBOX AREA------>
+
+
+          <!--- SUBMIT BUTTON--->
+
+        <div>
           <input
             type="submit"
             name="submit"
             id="submit"
             value="Submit"
           />
+        </div>
       </form>
     </main>
     <footer>
