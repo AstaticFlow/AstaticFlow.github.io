@@ -21,6 +21,6 @@ h1 {
 }
 
 .required:before {
-  content:"* ";
+  content:"*";
   color: red;
 }
