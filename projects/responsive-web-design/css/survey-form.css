@@ -1,28 +1,48 @@
-/*
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 21px;
   margin: 0;
-
+  padding: 0;
+  width= 100%;
+  height: auto;
+  border: 2px solid red;
 }
 
-p {
+header {
+  border: 2px solid green;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2px
 }
 
-h1 {
-}
+/*NEED TO REVISIT THIS FORMATTING*/
 
-#description {
-}
-
-fieldset {
+form {
   border: 1px solid black;
   padding: 1px auto;
   margin: 0 auto;
-  font-size: 1em;
+  font-size: 1rem;
+  width: auto;
+  max-width: 50%;
+  min-width: 500px;
 }
 
+fieldset {
+  border: 1px solid springgreen;
+  margin: 0 0;
+  padding: 0p 0;
+  display: block;
+  width: 80%%;
+  height: auto;
+}
+/*not satisfied need to learn more */
+fieldset label {
+  display: block;
+  border: 1px solid rgb(40, 138, 141);
+}
+
+
+/*
 form div p {
   margin: 0;
   padding: 0;
