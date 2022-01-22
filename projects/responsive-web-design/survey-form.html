@@ -3,14 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Concert Survey Form</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,13 +20,11 @@
       </p>
     </header>
     <main>
-      <form id="survey-form">
-        <!--NEED TO FIX RED ASTERISKS-->
-        <p>Fields marked with an "<span class="required"></span>" are required</p>
-          
-          <!---NAME INPUT------------------------------------------------->
-
-        <div>
+      <form id="survey-form"> 
+        
+<!--TEXT INPUT-->        
+        
+        <fieldset>
           <label id="name-label" for="name" class="required">Name:</label>
           <input 
             type="text" 
@@ -43,11 +33,8 @@
             placeholder="enter your full name here"
             required
           />
-        </div>
-
-          <!---EMAIL INPUT--------------------------------------------------->
-
-        <div>
+        </fieldset>
+        <fieldset>
           <label id="email-label" for="email" class="required">Email:</label>
           <input
             type="email"
@@ -56,109 +43,108 @@
             placeholder="e.g. me@example.com"
             required
           />
-        </div>
-
-          <!---AGE INPUT------------------------>
-
-        <div>
+        </fieldset>
+        <fieldset>
           <label id="number-label" for="number" class="">Age (optional):</label>
           <input
             type="number"
             id="number"
             name="age"
             placeholder="age"
-            min="10"
+            min="13"
             max="120"
           />
-        </div>
+        </fieldset>
 
-          <!---DROPDOWN SELECTOR--------------------------------------->
+<!--DROPDOWN-->
 
-        <div>
-          <p>How satisfying was the performance?</p>
+        <fieldset>
+          <label for="dropdown">How satisfying was the performance?</label>
           <select id="dropdown" name="satisfaction" required>
             <option disabled selected value>Please choose one</option>
             <option value="high-sat">5 - Highly Satisfying</option>
             <option value="sat">4 - Satisfying</option>
             <option value="neutral-sat">3 - Neutral</option>
-            <option value="unsat">2-Unsatisfying</option>
+            <option value="unsat">2 - Unsatisfying</option>
             <option value="high-unsat">1 - Highly Unsatisfying</option>
           </select>
-        </div>
+        </fieldset>
 
-          <!---RADIO SELECTOR------------------------------------------>
+<!--RADIO BUTTTONS-->
 
-        <div>
-          <p>How likely are you to return for another performance?</p>
-          <label>
-            <input
+        <fieldset>
+          <p>On a scale from 1 to 5, how likely are you to return for another performance?</p>
+          <input
+            name="user-return"
+            id="highly-likely"
+            value="highly-likely"
+            type="radio"
+            class="inline" />
+          <label for="highly-likely"> 5-Highly Likely</label>
+          <input
               name="user-return"
-              value="highly-likely-return"
+              id="likely"
+              value="likely"
               type="radio"
-              class="input-radio"
-            />
-            5 - Highly Likely
+              class="inline" />
+          <label for="likely"> 4-Likely
           </label>
-          <label>
-            <input
+          <input
+            name="user-return"
+            id="neutral"
+            value="neutral"
+            type="radio"
+            class="inline" />
+          <label for="neutral"> 3-Neutral</label>
+          </label>
+          <input
               name="user-return"
-              value="likely-return"
+              id="unlikely"
+              value="unlikely"
               type="radio"
-              class="input-radio"
-            />
-            4 - Likely
-          </label>
-          <label>
-            <input
-              name="user-return"
-              value="neutral-return"
-              type="radio"
-              class="input-radio"
-            />
-            3 - Neutral
-          </label>
-          <label>
-            <input
-              name="user-return"
-              value="unlikely-return"
-              type="radio"
-              class="input-radio"
-            />
-            2 - Unlikely
-          </label>
-          <label>
-            <input
-              name="user-return"
-              value="highly-unlikely-return"
-              type="radio"
-              class="input-radio"
-            />
-            1 - Highly Unlikely
-          </label>
-        </div>
+              class="inline" />
+          <label for="unlikely"> 2-Unlikely</label>
+          <input
+            name="user-return"
+            id="highly-unlikely"
+            value="highly-unlikely"
+            type="radio"
+            class="inline" />
+          <label for="highly-unlikely"> 1-Highly Unlikely</label>
+        </fieldset>
 
-          <!---CHECKBOX SELECTOR--->
+<!--CHECKBOXES-->
 
-        <div>
-          
-        </div>
+        <fieldset id="performance">
+          <p>Which performances would you like to see in the future?</p>
+          <p>(Select as many as you would like)</p>
+          <input type="checkbox" id="performance1" name="performance" value="perf1" />
+          <label for="performance1"> Performance 1</label>
+          <input type="checkbox" id="performance2" name="performance" value="perf2"/>
+          <label for="performance2"> Performance 2</label>
+          <input type="checkbox" id="performance3" name="performance" value="perf3"/>
+          <label for="performance3"> Performance 3</label>
+          <input type="checkbox" id="performance4" name="performance" value="perf4"/>
+          <label for="performance4"> Performance 4</label>
+          <input type="checkbox" id="performance5" name="performance" value="perf5"/>
+          <label for="performance5"> Performance 5</label>
+        </fieldset>
 
-          <!---TEXTBOX AREA------>
+<!--TEXTBOX-->
 
-        <div>
-          
-        </div>
+        <fieldset>
+          <label for="comments">Do you have any comments or suggestions?</label>
+          <textarea name="comments" id="comments" rows=5 cols=40 placeholder="Please enter your comments here..."></textarea>
+        </fieldset>
 
           <!--- SUBMIT BUTTON--->
 
-        <div>
           <input
-            type="submit"
-            name="submit"
-            id="submit"
-            value="Submit"
-          />
-        </div>
+          type="submit"
+          name="submit"
+          id="submit"
+          value="Submit" />
+
       </form>
     </main>
     <footer>
