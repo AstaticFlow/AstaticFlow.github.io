@@ -47,13 +47,6 @@ fieldset {
   width: 80%%;
   height: auto;
 }
-/*not satisfied need to learn more */
-fieldset label {
-  border: 1px solid rgb(40, 138, 141);
-}
-
-.checkbox {
-}
 
 #submit {
   display: block;
@@ -62,15 +55,3 @@ fieldset label {
 
 .center {
   text-align: center;
-}
-/*
-form div p {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-text {
-  text-align: center;
-  font-style: italic;
-}
-*/

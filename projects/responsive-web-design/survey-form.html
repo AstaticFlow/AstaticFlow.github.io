@@ -25,7 +25,7 @@
 <!--TEXT INPUT-->        
         
         <fieldset>
-          <label id="name-label" for="name" class="required">Name:</label>
+          <label id="name-label" for="name">Name:</label>
           <input 
             type="text" 
             id="name" 
@@ -35,7 +35,7 @@
           />
         </fieldset>
         <fieldset>
-          <label id="email-label" for="email" class="required">Email:</label>
+          <label id="email-label" for="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -51,7 +51,7 @@
             id="number"
             name="age"
             placeholder="age"
-            min="13"
+            min="10"
             max="120"
           />
         </fieldset>
@@ -79,14 +79,14 @@
             id="highly-likely"
             value="highly-likely"
             type="radio"
-            class="inline" />
+            />
           <label for="highly-likely"> 5-Highly Likely</label>
           <input
               name="user-return"
               id="likely"
               value="likely"
               type="radio"
-              class="inline" />
+              />
           <label for="likely"> 4-Likely
           </label>
           <input
@@ -94,7 +94,7 @@
             id="neutral"
             value="neutral"
             type="radio"
-            class="inline" />
+            />
           <label for="neutral"> 3-Neutral</label>
           </label>
           <input
@@ -102,23 +102,23 @@
               id="unlikely"
               value="unlikely"
               type="radio"
-              class="inline" />
+              />
           <label for="unlikely"> 2-Unlikely</label>
           <input
             name="user-return"
             id="highly-unlikely"
             value="highly-unlikely"
             type="radio"
-            class="inline" />
+             />
           <label for="highly-unlikely"> 1-Highly Unlikely</label>
         </fieldset>
 
 <!--CHECKBOXES-->
 
-        <fieldset class="checkbox">
-          <p>Which performances would you like to see in the future?</p>
-          <p>(Select as many as you would like)</p>
-          <input type="checkbox" id="performance1" name="performance" value="perf1" />
+        <fieldset>
+          <p>Which performances would you like to see in the future?
+          <br>(Select as many as you would like)</p>
+          <input type="checkbox" id="performance1" name="performance" value="perf1"/>
           <label for="performance1"> Performance 1</label>
           <input type="checkbox" id="performance2" name="performance" value="perf2"/>
           <label for="performance2"> Performance 2</label>
@@ -137,7 +137,7 @@
           <textarea name="comments" id="comments" rows=5 cols=40 placeholder="Please enter your comments here..."></textarea>
         </fieldset>
 
-          <!--- SUBMIT BUTTON--->
+<!--- SUBMIT BUTTON--->
 
           <input
           type="submit"
