@@ -1,4 +1,5 @@
-html {
+
+ html {
   background-image: linear-gradient(white, #1e9ee6);
 }
 
@@ -16,12 +17,12 @@ body {
   min-width: 200px;
   max-width: 800px;
   height: auto;
-  border: 2px solid red;
+ /* border: 2px solid red; */
 }
 
 header {
   color: white;
-  border: 2px solid green;
+  border-bottom: 2px solid black;
   margin: 40px auto;
   text-align: center;
   padding: 0;
@@ -30,11 +31,11 @@ header {
 H1 {
   margin: 0 auto;
   padding: 0;
-  border: 1px solid black;
+ /* border: 1px solid black; */
 }
 
 p {
-  border: 1px solid blue;
+ /* border: 1px solid blue; */
   margin: 0;
   padding: 0;
 }
@@ -42,7 +43,7 @@ p {
 /*NEED TO REVISIT THIS FORMATTING*/
 
 form {
-  border: 1px solid black;
+ /* border: 1px solid black; */
   padding: 1px auto;
   margin: 50px auto;
   font-size: 1rem;
@@ -52,7 +53,7 @@ form {
 }
 
 fieldset {
-  border: 1px solid springgreen;
+ /* border: 1px solid springgreen; */
   margin: 0;
   padding: 0p 0;
   width: 80%%;
