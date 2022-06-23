@@ -14,6 +14,7 @@
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  <header id="header">
             <img src="" id="header-img" alt="Company Logo" >
+            <h1>Fictional ABC Company</h1>
             <nav class="topnav" id="nav-bar">
                 <ul class="no-list">
                     <li><a class="nav-link" href="#Features">Features</a></li>
@@ -34,15 +35,26 @@
             </div>
             <div id="How_it_Works">
                 <h2>How it Works</h2>
+                <video id="video" width="320" height="240" controls>
+                    <source src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.HD.mov" type ="video/mov">
+                    <source src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>                
             </div>
             <div id="Pricing">
                 <h2>Pricing</h2>
+                <video id="video" width="320" height="240" controls>
+                    <source src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.HD.mov" type ="video/mov">
+                    <source src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>                
             </div>
             <div id="Contact_Us">
                 <h2>Contact Information</h2>
-                <form id="form">
-                    EMAIL FORM HERE
-                    <input id="email" placeholder="someone@emailaddress.com">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <p>Join Out Mailing List</p>
+                    <input id="email" type="email" name="email" placeholder="enter your email here" >
+                    <input id="submit" type="submit" value="Submit" />
                 </form>
             </div>          
         </main>
