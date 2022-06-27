@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Product Landing Page</title>
+        <title>Awesome Drumsticks</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -13,21 +13,47 @@
     </head>
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <header id="header" class="no-scroll">
-            <img src="" id="header-img" alt="Company Logo" />
-            <h1>Fictional ABC Company</h1>
+        <header id="header" ma>
+            <a class="logo" href="#" id="nav-title"
+                ><img src="" alt="Awesome Drumsticks" id="header-img"
+            /></a>
             <nav class="topnav" id="nav-bar">
-                <div class="no-list sticky">
-                    <a class="nav-link" href="#Features">Features</a>
-                    <a class="nav-link" href="#How_it_Works">How it Works</a>
-                    <a class="nav-link" href="#Pricing">Pricing</a>
-                    <a class="nav-link" href="#Contact_Us">Contact Us</a>
-                </div>
+                <ul>
+                    <li>
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li>
+                        <a href="#how-we-do-it" class="nav-link"
+                            >How We Do It</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#contact-us" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <main id="main-doc">
-            <div id="Features">
+            <section id="features">
                 <h2>Features</h2>
+                <ul>
+                    <li>Completely Synthetic Construction</li>
+                    <li>Custom Lengths and Weights</li>
+                    <li>Custom Colors and Personalization</li>
+                    <li>5 Year Warranty</li>
+                </ul>
+            </section>
+            <section id="how-we-do-it">
+                <h2>How We Do It</h2>
+                <p>
+                    Our founder, engineer John Smith, developed a revolutionary
+                    production method that uses a proprietary mixture of
+                    synthetic materials to recreate the experience of using wood
+                    drumsticks.
+                </p>
                 <video id="video" width="320" height="240" controls>
                     <source
                         src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.HD.mov"
@@ -39,42 +65,37 @@
                     />
                     Your browser does not support this video.
                 </video>
-            </div>
-            <div id="How_it_Works">
-                <h2>How it Works</h2>
-                <video id="video" width="320" height="240" controls>
-                    <source
-                        src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.HD.mov"
-                        type="video/mov"
-                    />
-                    <source
-                        src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.mp4"
-                        type="video/mp4"
-                    />
-                    Your browser does not support this video.
-                </video>
-            </div>
-            <div id="Pricing">
+            </section>
+            <section id="pricing">
                 <h2>Pricing</h2>
-                <video id="video" width="320" height="240" controls>
-                    <source
-                        src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.HD.mov"
-                        type="video/mov"
-                    />
-                    <source
-                        src="video/Lorem_ipsum_video_-_Dummy_video_for_your_website.mp4"
-                        type="video/mp4"
-                    />
-                    Your browser does not support this video.
-                </video>
-            </div>
-            <div id="Contact_Us">
+                <div class="pricing-options">
+                    <div class="price-box">
+                        <h3>Option A</h3>
+                        <p>Wood color finished sticks with our company logo.</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="price-box">
+                        <h3>Option B</h3>
+                        <p>Custom color sticks with your personalized logo.</p>
+                        <button>Select</button>
+                    </div>
+                    <div class="price-box">
+                        <h3>Option C</h3>
+                        <p>
+                            Sticks completely customized to your dimensions with
+                            custom color and personalized logo.
+                        </p>
+                        <button>Select</button>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-us">
                 <h2>Contact Information</h2>
                 <form
                     id="form"
                     action="https://www.freecodecamp.com/email-submit"
                 >
-                    <p>Join Out Mailing List</p>
+                    <p>Join Our Waitlist</p>
                     <input
                         id="email"
                         type="email"
@@ -83,8 +104,18 @@
                     />
                     <input id="submit" type="submit" value="Submit" />
                 </form>
-            </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <address>
+                <p>&copy;2022 Awesome Drumsticks</p>
+                <p>
+                    Design Project by
+                    <a href="https://astaticflow.github.io/" target="_blank"
+                        >Scott McDonald</a
+                    >
+                </p>
+            </address>
+        </footer>
     </body>
 </html>
