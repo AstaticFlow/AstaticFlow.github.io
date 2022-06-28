@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Awesome Drumsticks</title>
+        <title>Awesome Drums</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -13,9 +13,9 @@
     </head>
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <header id="header" ma>
+        <header id="header" class="sticky">
             <a class="logo" href="#" id="nav-title"
-                ><img src="" alt="Awesome Drumsticks" id="header-img"
+                ><img src="" alt="Awesome Drums" id="header-img"
             /></a>
             <nav class="topnav" id="nav-bar">
                 <ul>
@@ -37,7 +37,7 @@
             </nav>
         </header>
         <main id="main-doc">
-            <section id="features">
+            <section id="features" class="content">
                 <h2>Features</h2>
                 <ul>
                     <li>Completely Synthetic Construction</li>
@@ -46,13 +46,13 @@
                     <li>5 Year Warranty</li>
                 </ul>
             </section>
-            <section id="how-we-do-it" class="center">
+            <section id="how-we-do-it" class="content">
                 <h2>How We Do It</h2>
                 <p>
                     Our founder, engineer John Smith, developed a revolutionary
                     production method that uses a proprietary mixture of
                     synthetic materials to recreate the experience of using wood
-                    drumsticks.
+                    drums.
                 </p>
                 <video id="video" width="320" height="240" controls>
                     <source
@@ -69,40 +69,35 @@
             <section id="pricing">
                 <h2>Pricing</h2>
                 <div class="pricing-options">
-                    <div class="price-box">
-                        <h3>Option A</h3>
-                        <ul>
-                            <li>SimuWood Finish</li>
-                            <li>Stock Logo</li>
-                        </ul>
+                    <div class="option-card">
+                        <img src="images/product/drum3.png" alt="Drums in Concert" class="card-img">
+                        <h3>Stock Build</h3>
+                        <p>This option is our stock hardware with prefinished shells. Even though the cost is low, the quality is set to the same standard as our higher options.</p>
                         <button>Select</button>
                     </div>
-                    <div class="price-box">
-                        <h3>Option B</h3>
-                        <ul>
-                            <li>Custom Finish</li>
-                            <li>Personalized Logo</li>
-                        </ul>
+                    <div class="option-card">
+                        <img src="images/product/drum2.png" alt="Drums Being Recorded" class="card-img">
+                        <h3>Custom Color</h3>
+                        <p>This option is our stock hardware, but with your personal color. The drums are sent to be painted by our custom color lab after consultation with you on the design.</p>
                         <button>Select</button>
                     </div>
-                    <div class="price-box">
-                        <h3>Option C</h3>
-                        <ul>
-                            <li>Custom Shape</li>
-                            <li>Custom Finish</li>
-                            <li>Custom Logo</li>
-                        </ul>
+                    <div class="option-card">
+                        <img src="images/product/drum1.png" alt="Color Drums in Concert" class="card-img">
+                        <h3>Fully Custom Design</h3>
+                        <p>Our fully custom option included a consultation with our engineers who will work with you to design a set entirely to your specifications. It will be truly unique and one-of-a-kind.</p>
                         <button>Select</button>
                     </div>
                 </div>
             </section>
             <section id="contact-us">
                 <h2>Contact Information</h2>
+                <p>1234 Any St.</p>
+                <p>Anywhere, USA.</p>
                 <form
                     id="form"
                     action="https://www.freecodecamp.com/email-submit"
                 >
-                    <p>Join Our Waitlist</p>
+                    <p>Join Our Mailing List</p>
                     <input
                         id="email"
                         type="email"
